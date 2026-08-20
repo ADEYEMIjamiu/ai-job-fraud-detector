@@ -1,12 +1,6 @@
 import streamlit as st
 import joblib
 import re
-import sklearn
-import numpy
-
-st.write("scikit-learn:", sklearn.__version__)
-st.write("joblib:", joblib.__version__)
-st.write("numpy:", numpy.__version__)
 
 svm = joblib.load('svm_model.joblib')
 vectorizer = joblib.load('tfidf_vectorizer.joblib')
